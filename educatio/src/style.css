@@ -1,0 +1,9 @@
+html,body{
+    background-color: aqua;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.Avatar {
+    margin: 20px;
+    border-radius: 50%;
+}
