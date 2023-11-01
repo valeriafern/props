@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 // const mensaje = ("arte")
 // const arreglo = ("dibujo")
 // const arreglo2 = [{nombre: "cindy",apellido:"hurtado"},{nombre: "petro"},{animal: "ballena", edad:"45"}]
@@ -40,22 +42,31 @@ export const Avatar = () =>{
     )
 }
 
+ const mensaje = () => {
+    alert("Mensaje de prueba");
+  };
 
-// export const FirsApp = (name, age, birth)=> {
-// return(
-//     <>
-//     <h4>{name}</h4>
-//     <h4>{age}</h4>
-//     <h4>{birth}</h4>
-//     </>
-// );
-// }
+export const FirsApp = (props)=> {
+    const { name, age, birth } = props;
+
+return(
+    <>
+    <h4>{name}</h4>
+    <h4>{age}</h4>
+    <h4>{birth}</h4>
+    <button onClick={mensaje}>
+        Aceptar
+    </button>
+    </>
+);
+}
 
 
 // export const FirsApp = (props)=> {
 //     console.log(props)
 // return(
 //     <>
+//     <h1>propiedades</h1>
 //     <h1>{props.title}</h1>
 //     </>
 // );
@@ -71,4 +82,14 @@ export const Avatar = () =>{
 // );
 // }
 
-//son atributos e un componente  que sirven para comunicarse de un elemento a o
+FirsApp.propTypes = {
+    name: PropTypes.string.isRequired,
+    age: PropTypes.number.isRequired,
+    birth: PropTypes.string
+}
+
+FirsApp.defaultProps ={
+    name:'nombre por defecto',
+    age: 13,
+    birth: '3 de junio'
+}

@@ -29,3 +29,6 @@
 //pueden marcasrse como obligatorias 
 //las props son la coleccion de datos que un componente recibe
 //los objetos no se los puedo asignar a una props
+//son atributos e un componente  que sirven para comunicarse de un componnte a otro
+//hook son funciones,sirven para que yo pueda trabajar programacion sin necesidad de declarar clases
+//permite reutilizar componentes
