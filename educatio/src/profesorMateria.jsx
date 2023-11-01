@@ -22,3 +22,10 @@
 //     apellido: "apellido por defecto",
 //     edad:15
 // }
+
+
+//las prop no se pueden  cambiar despues de declarar,son inmutables
+//puedentener un valor por defecto
+//pueden marcasrse como obligatorias 
+//las props son la coleccion de datos que un componente recibe
+//los objetos no se los puedo asignar a una props
